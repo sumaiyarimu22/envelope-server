@@ -30,7 +30,9 @@ const registerUser = async (req, res) => {
     if (!validator.isStrongPassword(password)) {
       return res
         .status(400)
-        .json("Password too weak. Use lowercase, uppercase, number, 8+ chars.");
+        .json(
+          "Password too weak. Use lowercase, uppercase, number,symbol, 8+ chars."
+        );
     }
 
     //hash password
