@@ -36,7 +36,7 @@ const findAllChats = async (req, res) => {
 };
 
 //find a single chat
-const findASingleChat = async (erq, res) => {
+const findASingleChat = async (req, res) => {
   const { firstId, secondId } = req.params;
 
   try {
